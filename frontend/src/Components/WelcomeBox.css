@@ -1,0 +1,35 @@
+*{
+    margin-bottom: 0px!important;
+}
+
+.welcome-box{
+    width: 100%;
+    height: auto;
+    background-color: wheat;
+    text-align: center;
+}
+
+.welcome-title{
+    font-size: 65px;
+    font-weight: 900;
+    padding: 15px;
+    color: rgb(20,61,89);
+    text-shadow: 
+        1px 1px 0 #18e657,
+        2px 2px 0 #bf189b,
+        3px 3px #ffeb00,
+        4px 4px black;
+
+}
+
+.welcome-message{
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    color: rgb(20,61,89);
+}
+
+.welcome-submessage{
+    font-size: 15px;
+    font-weight: 600;
+}
