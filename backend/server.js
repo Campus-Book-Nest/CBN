@@ -25,32 +25,20 @@ app.use("/api/transactions", transactionRoutes);
 app.use("/api/categories", categoryRoutes);
 
 /* MongoDB connection */
-console.log(process.env.MONGO_URL);
-// mongoose.connect(
-//   process.env.MONGO_URL,
-//   {
-//     useCreateIndex: true,
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   },
-//   () => {
-//     console.log("MONGODB CONNECTED");
-//   }
-// );
-
-mongoose.connect('mongodb://localhost/mini_proj', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-  .then(() => {
-    console.log('Connected to MongoDB');
-  })
-  .catch(err => {
-    console.error('Error connecting to MongoDB:', err);
-  });
+mongoose.connect(
+  process.env.MONGO_URL,
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  () => {
+    console.log("MONGODB CONNECTED");
+    }
+);
 
 app.get("/", (req, res) => {
-  res.status(200).send("Welcome to LibraryApp");
+  res.status(200).send("Welcome to CBNApp");
 });
 
 /* Port Listening In */
